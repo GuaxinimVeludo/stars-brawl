@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101a32">
+  <title>Stars Brawl — Gem Grab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand"><span class="brand-star">★</span><div><small>ARENA OFFLINE</small><h1>STARS <b>BRAWL</b></h1></div></div><div class="mode">GEM GRAB <span>3 × 3</span></div></header>
+    <section class="stage" aria-label="Arena Gem Grab">
+      <canvas id="game" width="960" height="600"></canvas>
+      <div class="hud">
+        <div class="team-score blue"><i>◆</i><b id="blue-score">0</b><small>AZUL</small></div>
+        <div class="clock"><strong id="clock">2:00</strong><small id="status">COLETE 10 GEMAS</small></div>
+        <div class="team-score red"><i>◆</i><b id="red-score">0</b><small>VERMELHO</small></div>
+      </div>
+      <div class="bottom-hud"><div class="health"><span id="health-fill"></span><b id="health-label">5600</b></div><div class="ammo" id="ammo"></div><button id="super" class="super" aria-label="Usar super">SUPER</button></div>
+      <div id="overlay" class="overlay"><div class="card"><div class="gem-logo">◆</div><p class="eyebrow">MODO DE JOGO · GEM GRAB</p><h2 id="overlay-title">A corrida<br><em>pelas gemas</em></h2><p id="overlay-copy">Junte 10 gemas com sua equipe e segure a vantagem por 3 segundos. Cuidado: ao ser derrotado, você deixa gemas para trás.</p><div class="controls"><span><b>WASD</b> mover</span><span><b>MOUSE</b> mirar e atirar</span><span><b>ESPAÇO</b> super</span></div><button id="play">ENTRAR NA ARENA <span>→</span></button></div></div>
+      <div class="toast" id="toast"></div>
+    </section>
+    <footer><span>● PARTIDA LOCAL · SEM INTERNET</span><span>Seu brawler: <b>SHELLY</b> · Escopeta</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
